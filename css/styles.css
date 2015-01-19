@@ -1,0 +1,274 @@
+body
+{
+	background-color: #F5F5F5;
+}
+header
+{
+	background-color: rgb(158, 49, 49);
+}
+.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children
+{
+	background-color: rgb(158, 49, 49);	
+}
+.pure-menu a
+{
+	color: white;
+}
+header .pure-menu li a:hover, header .pure-menu li a:focus, header .pure-menu li.pure-menu-selected a
+{
+background-color: #982D2D;
+border-top: 2px solid rgb(102, 34, 34);
+border-bottom: 2px solid rgb(102, 12, 12);
+color: white;
+}
+header img.d-logo
+{
+
+}
+header .search-form
+{
+	margin: 36px;
+	/*float:right !important;*/
+	display: inline-block;
+}
+header > section
+{
+	clear: both;
+}
+section.spearhead.landing
+{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+section.spearhead.landing h1
+{
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 50px 2px;
+}
+@media (min-width: 850px) {
+	section.spearhead.landing h1
+	{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+section.spearhead
+{
+	padding: 50px;
+	background-color: rgb(139, 158, 169);
+}
+section.spearhead a, section.spearhead a:visited,section.spearhead a:active
+{
+	text-decoration: none;
+	color: rgb(158, 49, 49);
+}
+section.spearhead h1
+{
+	color: white;
+	text-align: center;
+}
+section.spearhead h2
+{
+	text-align: center;
+	color: #3F0000;
+	margin-bottom: 40px;
+}
+section.container
+{
+	padding-bottom: 40px;
+}
+.spearhead .dub img
+{
+	margin-top: -20px;
+	position: relative;
+	top: 13px;
+}
+h1
+{
+	color: rgb(63, 0, 0);
+}
+section div.code-comment span
+{
+	display: block;
+	width: 77%;
+	padding: 50px 0px 0px 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* button stuff */
+	button.btn
+	{
+		padding: 10px 20px 10px 20px;
+		color: white;
+		vertical-align: bottom;
+		border: 0px;
+	}
+	button.btn.btn-large
+	{
+		padding: 20px 40px;
+		font-size: 1.2em;
+	}
+	button.btn.btn-large:active
+	{
+		padding: 21px 40px 19px 40px;
+	}
+	button.btn-primary
+	{
+		background-color: rgb(126, 107, 77);
+		/*border: 1px solid rgb(65, 43, 28);	*/
+	}
+	button.btn-secondary
+	{
+		background-color: rgb(77, 98, 126);
+		/*border: 1px solid rgb(36, 48, 74);	*/
+	}
+	button.btn:active
+	{
+		/*border-top: 1px solid black;*/
+		/*border-left: 1px solid black;*/
+		padding: 11px 20px 9px 20px;
+	}
+	button.btn-primary:active
+	{
+		box-shadow: inset 1px 2px 9px rgb(56, 46, 28);
+	}
+	button.btn-secondary:active
+	{
+		box-shadow: inset 1px 2px 9px rgb(28, 42, 56);
+	}
+	button.btn:focus
+	{
+		outline: 0px;
+	}
+/* button end */
+.pull-right
+{
+	float: right !important;
+}
+/* container and media queries */
+	.container
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media (max-width: 849px) {
+		.container
+		{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+	@media (min-width: 850px) {
+		.container
+		{
+			width: 768px;
+		}
+	}
+	@media (min-width: 1100px) {
+		.container
+		{
+			width: 992px;
+		}
+	}
+	@media (min-width: 1300px) {
+		.container
+		{
+			width: 1200px;
+		}
+	}
+/* container and media queries end*/
+.api-navigation .pure-menu
+{
+	background-color: rgb(250, 250, 250);
+	border: 1px solid #DFDFDF;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+.api-navigation .pure-menu li span
+{
+	color: white;
+}
+.api-navigation .pure-menu.pure-menu-open .pure-menu.pure-menu-open
+{
+	padding-left: 20px;
+	border: 0px;
+	margin-top: 5px;
+}
+.api-navigation .pure-menu + .pure-menu
+{
+	margin-top: 10px;
+}
+.api-navigation .pure-menu a
+{
+	padding: 0 10px;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: black;
+}
+.api-navigation .pure-menu-heading
+{
+	background-color:  rgb(139, 158, 169);
+	font-size: 1.5em;
+	text-transform: none;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+.api-navigation .pure-menu li a:hover
+{
+	color: black;
+	background-color: #E1E2E2;
+}
+.api-navigation .menu-item-divided
+{
+	border-top:1px solid gray;
+	padding-top:40px;
+}
+.api-navigation .pure-menu.pure-menu-open
+{
+	width: auto;
+}
+.api-content .body-box
+{
+margin: 20px;
+padding: 20px;
+border: 1px solid #DDDDDD;
+background-color: rgb(252, 252, 252);
+}
+.pure-u-1-2.panel p
+{
+	margin: 20px;
+}
+.spearhead blockquote
+{
+	font-style: italic;
+	background-color: rgb(196, 211, 219);
+	padding: 10px;
+}
+.spearhead cite
+{
+	font-style: normal;
+	display: block;
+	margin-top: 18px;
+	text-align: right;
+}
+.spearhead .dconf h2
+{
+	margin-bottom: 20px;
+}
+.spearhead.footer
+{
+	background-color: rgb(158, 49, 49);
+	color: white;
+	padding-bottom: 0px;
+}
+#copyright
+{
+	text-align: center;
+	background-color: rgb(158, 49, 49);
+	color: white;
+	padding-bottom: 30px;
+	padding-top: 30px;	
+}

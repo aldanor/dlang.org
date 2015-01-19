@@ -6,7 +6,7 @@ DPL_DOCS=$(DPL_DOCS_PATH)\dpl-docs.exe
 
 SRC= $(SPECSRC) cpptod.dd ctod.dd pretod.dd cppcontracts.dd index.dd overview.dd	\
 	mixin.dd memory.dd interface.dd windows.dd dll.dd htomodule.dd faq.dd	\
-	dstyle.dd wc.dd changelog.dd glossary.dd acknowledgements.dd		\
+	dstyle.dd wc.dd glossary.dd acknowledgements.dd		\
 	dcompiler.dd builtin.dd comparison.dd rationale.dd code_coverage.dd	\
 	exception-safe.dd rdmd.dd templates-revisited.dd warnings.dd		\
 	ascii-table.dd windbg.dd htod.dd regular-expression.dd			\
@@ -38,7 +38,7 @@ TARGETS=cpptod.html ctod.html pretod.html cppcontracts.html index.html overview.
 	operatoroverloading.html template.html mixin.html contracts.html version.html	\
 	errors.html garbage.html memory.html float.html iasm.html		\
 	interface.html portability.html entity.html abi.html windows.html	\
-	dll.html htomodule.html faq.html dstyle.html wc.html changelog.html	\
+	dll.html htomodule.html faq.html dstyle.html wc.html	\
 	glossary.html acknowledgements.html builtin.html interfaceToC.html	\
 	comparison.html rationale.html ddoc.html code_coverage.html		\
 	exception-safe.html rdmd.html templates-revisited.html warnings.html	\
@@ -93,8 +93,6 @@ attribute.html : $(DDOC) attribute.dd
 bug-stats.php.html : $(DDOC) bug-stats.php.dd
 
 builtin.html : $(DDOC) builtin.dd
-
-changelog.html : $(DDOC) changelog.dd
 
 class.html : $(DDOC) class.dd
 
