@@ -84,17 +84,49 @@ section.container
 	position: relative;
 	top: 13px;
 }
-h1
+h1, h2, h3, h4, h5, h6
 {
 	color: rgb(63, 0, 0);
 }
-section div.code-comment span
+div.code-comment
 {
-	display: block;
-	width: 77%;
-	padding: 50px 0px 0px 0px;
-	margin-left: auto;
-	margin-right: auto;
+	vertical-align: middle;
+	display: flex;
+}
+div.code-comment > div
+{
+	padding: 15px;
+	display: flex;
+	flex: 0 1 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* vertical-align: middle; */
+	justify-content: space-around;
+}
+.code-comment li
+{
+	list-style-type: none;
+	padding:10px;
+	border: 1px solid rgb(231,231,231);
+	margin: 10px;
+}
+.code-comment li::before
+{
+	content: "\"";
+	font-size: 2em;
+	line-height: 0.2em;
+	top: 8px;
+	position: relative;
+	color: rgb(216, 216, 216);
+}
+.code-comment li::after
+{
+	content: "\"";
+	font-size: 2em;
+	line-height: 0.2em;
+	top: 8px;
+	position: relative;
+	color: rgb(216, 216, 216);
 }
 /* button stuff */
 	button.btn
@@ -271,4 +303,48 @@ background-color: rgb(252, 252, 252);
 	color: white;
 	padding-bottom: 30px;
 	padding-top: 30px;	
+}
+table td
+{
+	padding: 10px;
+}
+table th
+{
+	padding: 10px;
+	background: rgb(139, 158, 169);
+	font-weight: bold;
+	color: white;
+}
+table tr:not(:last-of-type) td
+{
+	border-bottom: 1px dashed rgb(211, 211, 211);
+}
+table td:not(:last-of-type)
+{
+	border-right: 1px dashed rgb(211, 211, 211);
+}
+table tr:nth-of-type(even) td
+{
+	background: rgb(251, 251, 251);
+}
+table
+{
+	border: 1px solid rgb(211, 211, 211);
+	background: white;
+	padding: 10px;
+	color: #474747;
+}
+table caption
+{
+	caption-side: bottom;
+	background: rgb(245, 245, 245);
+	border: 1px solid lightgrey;
+	border-top: 0px;
+	padding: 5px;
+	font-style: italic;
+}
+h3 a, h4 a, h5 a
+{
+	text-decoration: none;
+	color: rgb(63, 0, 0);
 }
